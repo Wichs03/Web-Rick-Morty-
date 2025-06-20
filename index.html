@@ -6,6 +6,7 @@
     <title>Personajes</title>
     <link href="./output.css" rel="stylesheet" />
     <script src="./luis.js" defer></script>
+    <script src="hamburguesa.js" defer></script>
   </head>
   <body class="bg-gray-900 text-gray-100">
     <!-- header pc-->
@@ -43,8 +44,9 @@
 
         <div class="flex-1 flex justify-end">
           <!-- modo mobile -->
+          <!-- hamburguesa -->
           <button
-            id="mobile-menu-button"
+            id="toggle-filtros"
             class="md:hidden text-gray-300 hover:text-white focus:outline-none transition duration-300 transform hover:scale-110"
           >
             <svg
@@ -62,6 +64,7 @@
               />
             </svg>
           </button>
+          
         </div>
       </div>
     </header>
@@ -72,19 +75,7 @@
     <script>
       crearHero();
     </script>
-    <!-- <section
-      class="hero-section bg-gradient-to-r from-gray-800 to-gray-900 py-16 md:py-20"
-    >
-      <div class="container mx-auto px-6 text-center">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          Título Principal
-        </h1>
-        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          Descripción breve de los personajes o contenido del sitio.
-        </p>
-      </div>
-    </section> -->
-    <!--aqui estann las cardds -->
+      <!--aqui estann las cardds -->
     <section
       class="contenedorCards mx-auto px-4 sm:px-6 py-10 md:py-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
     ></section>
@@ -103,5 +94,6 @@
         <img src="images/adelante_1.png" alt="Siguiente" class="w-15 h-15" />
       </button>
     </div>
+    
   </body>
 </html>
