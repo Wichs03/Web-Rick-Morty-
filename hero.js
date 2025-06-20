@@ -1,5 +1,5 @@
 function crearHero() {
-  let contenedorHero = document.getElementById(".hero-section");
+  let contenedorHero = document.getElementById(".hero-container");
   const personajes = [1, 2, 3, 4, 265, 183];
   let index = 0;
   const intervalo = setInterval(() => {
@@ -32,7 +32,7 @@ function crearHero() {
         `https://rickandmortyapi.com/api/character/${id}`
       );
       let datos = await respuesta.json();
-      console.log(datos);
+      /* console.log(datos); */
       document.getElementById("hero-img").src = datos.image;
       document.getElementById("hero-name").textContent = datos.name;
     } catch (error) {
